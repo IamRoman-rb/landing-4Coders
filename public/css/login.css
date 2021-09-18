@@ -115,6 +115,7 @@ main#main-login h2{
     margin: 3rem 0 0 0;
     font-size: 1rem;
     font-family: var(--karla);
+    z-index: 10;
 }
 main#main-login h2 a{
     margin: 0 .5rem;
@@ -122,6 +123,7 @@ main#main-login h2 a{
     font-weight: 800;
     border-bottom: .2rem solid transparent;
     transition: all .5s ease-in-out;
+    z-index: 10;
 }
 main#main-login h2 a:hover,
 main#main-login h2 a:hover a::after{

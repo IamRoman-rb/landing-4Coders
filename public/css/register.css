@@ -115,12 +115,14 @@ main#main-register h2{
     margin: 3rem 0 0 0;
     font-size: 1rem;
     font-family: var(--karla);
+    z-index: 10;
 }
 main#main-register h2 a{
     margin: 0 .5rem;
     color: var(--primary-color);
     font-weight: 800;
     border-bottom: .2rem solid transparent;
+    z-index: 10;
     transition: all .5s ease-in-out;
 }
 main#main-register h2 a:hover,
