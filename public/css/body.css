@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--karla);
+    overflow-x: hidden;
+    background-color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+a, li{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+:root {
+    /* COLORS */
+
+    --primary-color: #6CD7E0;
+    --secundary-color: #22A6B3;
+    --terceary-color: #FA8231;
+
+    /* TIPOGRAFY */
+
+    --staaliches: 'Staatliches', cursive;
+    --karla: 'Karla', sans-serif;
+}

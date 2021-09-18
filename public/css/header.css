@@ -1,0 +1,102 @@
+header{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    padding: .5rem;
+    background-color: #fff;
+    box-shadow: 0 .5rem .9rem rgba(0, 0, 0, .1);
+    z-index: 10;
+}
+header nav a:nth-child(1){
+    width: 5rem;
+    height: 8vh;
+}
+header nav a:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 8vh;
+}
+header ul{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 10vh;
+    left: 100%;
+    background-color: white;
+    transition: all .5s ease-in-out;
+}
+header ul.active{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    box-shadow: 0 .5rem .9rem rgba(0, 0, 0, .1);
+    transition: all .5s ease-in-out;
+}
+header ul.active li a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: .1rem solid #ccc;
+}
+header button{
+    background-color: transparent;
+    color: var(--secundary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+header button i{
+    font-size: 2rem;
+}
+header ul li{
+    margin: 0 .5rem;
+}
+header ul li a{
+    padding: .5rem;
+    border-radius: .2rem;
+    transition: all .5s ease-in-out;
+}
+header ul li a:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 .4rem .7rem rgba(0, 0, 0, .1);
+}
+header ul.active li a{
+    background: none;
+}
+header ul.active li a:hover{
+    background: none;
+    color: #000;
+    box-shadow: none;
+}
+@media screen and (min-width: 768px) {
+    header ul{
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        position: inherit;
+        background-color: none;
+    }
+    header ul.active{
+        height: auto;
+        box-shadow: none;
+    }
+    header ul.active li a{
+        background: none;
+    }
+    button.burguer-menu{
+        display: none;
+    }
+}

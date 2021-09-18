@@ -1,0 +1,98 @@
+footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    flex-flow: row wrap;
+    box-shadow: 0 .5rem .9rem rgba(0, 0, 0, .3);
+}
+footer section.info-footer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+footer section.info-footer a{
+    margin: 0 .5rem;
+}
+footer section.info-footer:nth-child(1) i{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid var(--primary-color);
+    color: var(--primary-color);
+    padding: .5rem;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+footer section.info-footer:nth-child(1) i:hover{
+    border: .1rem solid var(--secundary-color);
+    color: var(--secundary-color);
+}
+footer section.info-footer form{
+    width: 90%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid .1rem #ccc;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+footer section.info-footer form input{
+    width: 90%;
+    height: 1.8rem;
+    outline: none;
+    border: none;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+footer section.info-footer form input::placeholder{
+    color: var(--secundary-color);
+}
+footer section.info-footer form button{
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    margin-left: 1rem;
+    border-radius: 10%;
+    background-color: transparent;
+    color: var(--secundary-color);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+footer section.info-footer form button:hover{
+    color: var(--primary-color );
+}
+footer section.info-footer form button:hover footer section.info-footer form input{
+    border: solid .1rem var(--secundary-color);
+}
+hr{
+    border: solid .05rem #ccc;
+    display: none;
+}
+footer section.info-footer h3{
+    font-size: 1rem;
+}
+footer section.info-footer h3 span{
+    color: var(--secundary-color);
+}
+@media screen and (min-width: 768px) {
+    footer section.info-footer{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer section.info-footer{
+        width: 30%;
+    }
+    hr{
+        display: flex;
+    }
+}
